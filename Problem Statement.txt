@@ -1,0 +1,24 @@
+Problem Statement:
+Imagine a marketplace/arbitrage model where buyers are looking to replace their existing Software as a Service (SaaS) with new ones at heavily discounted prices or just buy SaaS products for the first time at a fair price. The buyers in this case would be mid to large enterprises buying millions of $s of cloud SaaS based products and renewing it as needed. As a 2 sided marketplace with network effects we want buyers visiting the site and reviewing a curated list of SaaS products available in a certain category and start a Dutch reverse auction with their choice of top 3 vendors based on the reviews to get the best bargain through the marketplace. 
+
+As a starting point for the SaaS marketplace you can look at this model:
+
+https://aws.amazon.com/marketplace
+https://www.vendr.com/marketplace
+
+Your task is to build a marketplace website using any front end, back end technologies of your choice to allow users to select 3 products and solicit best quotes from the 3 vendors, simulate a vendor response with their best price quotes and showcase that back to the buyer for purchase. 
+
+Example to demonstrate the problem:
+
+Let’s say you are a lead developer at a mid-sized company that is in the market to buy a code collaboration platform for your team of 200 engineers  and have narrowed down your choices to Github, Gitlab, and Bitbucket. You don’t have the time to go talk to the sales person in each of these companies to broker the best deal and you are not a good negotiator.. That’s why you come to jazzee marketplace and review the various plans. Jazzee as the marketplace has a curated list of offerings and pricing plans it has picked from the vendors’ respective websites and provides a snapshot on its marketplace. 
+https://github.com/pricing
+https://about.gitlab.com/pricing/
+https://www.atlassian.com/software/bitbucket/pricing
+You pick the plans that best suit your needs from each of the products and provide your budget and requirements to Jazzee. Behind the scene, Jazzee reaches out to the sales teams at github, gitlab, and bitbucket and conducts a Dutch reverse auction and reverts with the best prices back to you as a buyer.
+
+https://www.procol.io/blog/reverse-auction/
+
+Note: You can make some assumptions as you see fit when designing the marketplace website and state those in a ReadMe file. Create video using tools like https://www.loom.com/ if possible to demonstrate your product.
+
+
+
