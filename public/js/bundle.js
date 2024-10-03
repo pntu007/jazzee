@@ -5,6 +5,8 @@ import { login, logout } from './login';
 import { updateSettings } from './updateSettings';
 import { showAlert } from './alerts';
 
+app.use(express.static('public')); // Assuming your CSS is in a 'public' folder
+
 // DOM ELEMENTS
 const loginForm = document.querySelector('.form--login');
 const logOutBtn = document.querySelector('.nav__el--logout');

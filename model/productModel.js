@@ -34,9 +34,19 @@ const productSchema = new mongoose.Schema(
             max: [5, 'Rating must be below 5.0'],
             set: val => Math.round(val * 10) / 10 // 4.666666, 46.6666, 47, 4.7
           },
-        slug: String,
+        slug: {
+            type : String,
+            unique : true
+        }
     }
 );
+
+productSchema.pre('save', function (next) {
+    if (this.isModified('name')) {
+      this.slug = slugify(this.name, { lower: true, strict: true });
+    }
+    next();
+});
 
 const Product = mongoose.model('Product', productSchema);
 

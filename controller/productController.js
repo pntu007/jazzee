@@ -23,3 +23,14 @@ exports.createProduct = catchAsync(async(req,res,next)=>{
         data : {product : newProduct}
     });
 });
+
+exports.getThisProduct = catchAsync(async(req,res,next)=>{
+    const product = await Product.find({slug : req.params.slug});
+
+    if(!product) return next(new AppError('No product found!',404));
+
+    res.status(200).json({
+        status : 'success',
+        data : product 
+    });
+});

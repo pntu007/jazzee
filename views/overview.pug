@@ -2,11 +2,11 @@ extends base
 
 block content
   main.main
-    each product in products
-      .product
+    .product
+      each product in products
         .product__card
-          img.product__image(src='path/to/image1.jpg' alt='product 1')
+          img.product__image(src=`/img/product/${product.images[0]}` alt='product')
           h3.product__title= product.name 
           p.product__details= product.description
           p.product__price= ` $${product.price} per person`
-          a.product__link(href='#') Details
+          a.product__link(href=`/product/${product.slug}`) Details
