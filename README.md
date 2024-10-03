@@ -25,6 +25,9 @@ This repository contains a prototype for the Jazzee Company website, showcasing 
 - **Database**: 
   - MongoDB
 
+### LOOM VIDEO LINK
+[Link](https://www.loom.com/share/9ce2f4a309574d41a6660ab751d51d9a?sid=3c6e8000-3184-49d7-b8a6-50f34e1ad0f1)
+
 ## Getting Started
 
 ### Prerequisites
